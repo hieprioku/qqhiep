@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #nut {
+      text-align: center;
+    }
+    #nut button {
+      width: 120px;
+      height: 30px;
+      background-color: aqua;
+    }
+    #giohang {
+      width: 700px;
+      margin: auto;
+    }
+    #tongtiengiohang {
+      text-align: center;
+      font-size: 1.2em;
+      color: chocolate;
+    }
+    #giohang.rows {
+      display: grid;
+      grid-template-columns: 50px 350px 100px 100px 90px;
+      background-color: burlywood;
+    }
+    #giohang.rows * {
+      border: 1px solid darkcyan;
+      padding: 5px;
+      text-align: center;
+    }
+    #giohang.rows input {
+      width: 60px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div id="nut">
+      <button onclick="taoSp()">tạo sp</button>
+      <button onclick="hienSp()">hiện sp</button>
+      <button onclick="xoaSp()">xóa sp</button>
+    </div>
+    <hr />
+    <div id="giohang">giỏ hàng</div>
+    <div id="tongtiengiohang">tổng tiền giỏ hàng</div>
+    <script src="./btlocalstorage.js"></script>
+  </body>
+</html>
